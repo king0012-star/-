@@ -1,0 +1,15 @@
+@@ -1,14 +1,10 @@
+＃https ://dependabot.com/docs/config-file/
+版本：1
+update_configs：
+  ＃尽快使package.json（＆lockfiles）保持最新
+  ＃新版本发布到npm注册表
+  - package_manager：“ JavaScript的”
+    目录：“ / ”
+    update_schedule：“每周”
+    ＃将默认的审阅者和标签应用于创建的请求请求
+    default_reviewers：
+      - “ Johann-S ”
+      - “ XhmikosR ”
+    default_labels：
+      - “依赖项”
