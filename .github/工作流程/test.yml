@@ -1,0 +1,13 @@
+        用途：actions / cache @ v1
+        与：
+          路径：〜/ .npm
+          键：$ {{Runner.os}}-节点-v {{matrix.node}}-$ {{hashFiles（'package.json'）}}-$ {{hashFiles（'package-lock.json'）} }-$ {{hashFiles（'。github / workflows / test.yml'）}}
+          密钥：$ {{Runner.os}}-节点-v $ {{matrix.node}}-$ {{hashFiles（'package.json'）}}-$ {{hashFiles（'package-lock.json'） }}-$ {{hashFiles（'。github / workflows / test.yml'）}}
+          恢复键：|
+            $ {{runner.OS}}-节点-v {{matrix.node}}-$ {{env.cache-name}}-
+            $ {{Runner.OS}}-节点-v {{matrix.node}}-
+            $ {{Runner.OS}}-
+            $ {{Runner.OS}}-节点-v $ {{matrix.node}}-$ {{hashFiles（'package.json'）}}-$ {{hashFiles（'package-lock.json'）}} -$ {{hashFiles（'。github / workflows / test.yml'）}}
+            $ {{Runner.OS}}-节点-v $ {{matrix.node}}-
+      - 名称：安装npm依赖项
+        运行：npm ci
